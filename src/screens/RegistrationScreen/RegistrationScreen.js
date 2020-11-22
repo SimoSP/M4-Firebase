@@ -11,11 +11,12 @@ export default function RegistrationScreen({navigation}) {
     const [password, setPassword] = useState('')
     const [confirmPassword, setConfirmPassword] = useState('')
 
+    /// Navigates to the login page.
     const onFooterLinkPress = () => {
         navigation.navigate('Login')
     }
-
-    const onRegisterPress = () => {
+    /// Handles registering user if the fields are inputted and correct.
+    const onCreateAccount = () => {
         if (password !== confirmPassword) {
             alert("Passwords don't match.")
             return
@@ -45,7 +46,6 @@ export default function RegistrationScreen({navigation}) {
                 alert(error)
         });
     }
-
     return (
         <View style={styles.container}>
             <KeyboardAwareScrollView
@@ -53,7 +53,7 @@ export default function RegistrationScreen({navigation}) {
                 keyboardShouldPersistTaps="always">
                 <Image
                     style={styles.logo}
-                    source={require('../../../assets/icon.png')}
+                    source={require('../../../assets/logo.png')}
                 />
                 <TextInput
                     style={styles.input}
@@ -95,7 +95,7 @@ export default function RegistrationScreen({navigation}) {
                 />
                 <TouchableOpacity
                     style={styles.button}
-                    onPress={() => onRegisterPress()}>
+                    onPress={() => onCreateAccount()}>
                     <Text style={styles.buttonTitle}>Create account</Text>
                 </TouchableOpacity>
                 <View style={styles.footerView}>

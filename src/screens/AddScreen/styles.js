@@ -6,13 +6,7 @@ export default StyleSheet.create({
         alignItems: 'center',
         backgroundColor: 'gray'
     },
-    text: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontSize: 40,
-        backgroundColor: 'gray'
-    },
-    
+  
     formContainer: {
         flexDirection: 'row',
         height: 80,
@@ -24,7 +18,7 @@ export default StyleSheet.create({
         paddingLeft: 30,
         paddingRight: 30,
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'center'
     },
     input: {
         height: 48,
@@ -35,41 +29,16 @@ export default StyleSheet.create({
         flex: 1,
         marginRight: 5
     },
-    buttons: {
-        backgroundColor: 'gray',
-        color: 'gray',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        height: 50,
-        
-    },
-    deletebutton: {
+    button: {
         height: 47,
         borderRadius: 5,
-        backgroundColor: 'red',
+        backgroundColor: 'green',
         width: 80,
         alignItems: "center",
-        justifyContent: 'center',
-        color: 'red'
+        justifyContent: 'center'
     },
     buttonText: {
         color: 'white',
         fontSize: 16
     },
-    listContainer: {
-
-        padding: 20,
-        backgroundColor: 'gray'
-    },
-    entityContainer: {
-        marginTop: 16,
-        borderBottomColor: '#cccccc',
-        borderBottomWidth: 1,
-        paddingBottom: 16,
-        
-    },
-    entityText: {
-        fontSize: 20,
-        color: '#333333'
-    }
 })

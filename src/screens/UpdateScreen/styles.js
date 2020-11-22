@@ -8,9 +8,7 @@ export default StyleSheet.create({
     },
     text: {
         alignItems: 'center',
-        justifyContent: 'center',
         fontSize: 40,
-        backgroundColor: 'gray'
     },
     
     formContainer: {
@@ -24,7 +22,7 @@ export default StyleSheet.create({
         paddingLeft: 30,
         paddingRight: 30,
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'center'
     },
     input: {
         height: 48,
@@ -35,13 +33,13 @@ export default StyleSheet.create({
         flex: 1,
         marginRight: 5
     },
-    buttons: {
-        backgroundColor: 'gray',
-        color: 'gray',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        height: 50,
-        
+    button: {
+        height: 47,
+        borderRadius: 5,
+        backgroundColor: '#788eec',
+        width: 80,
+        alignItems: "center",
+        justifyContent: 'center'
     },
     deletebutton: {
         height: 47,
@@ -57,16 +55,14 @@ export default StyleSheet.create({
         fontSize: 16
     },
     listContainer: {
-
+        marginTop: 20,
         padding: 20,
-        backgroundColor: 'gray'
     },
     entityContainer: {
         marginTop: 16,
         borderBottomColor: '#cccccc',
         borderBottomWidth: 1,
-        paddingBottom: 16,
-        
+        paddingBottom: 16
     },
     entityText: {
         fontSize: 20,
